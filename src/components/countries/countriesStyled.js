@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 export const Card = styled.div`
-  width: 300px;
-  height: 300px;
+  width: 30%;
+  height: 30%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,6 +12,7 @@ export const Card = styled.div`
   transition: all 0.3s ease;
   border-radius: 10px;
   background: linear-gradient(to bottom right, #fff 0%, #f0f4f7 100%);
+    padding: 20px;
   a:hover {
     color: #597cc0;
   }
@@ -21,13 +22,19 @@ export const Card = styled.div`
     z-index: 2;
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
   }
+    @media (max-width: 1000px) {
+        width: 80%;
+        height: 80%;
+    }
 `;
 export const ItemInner = styled.div`
-  display: flex;
-  justify-content: center;
-  background-size: cover;
-  width: 200px;
-  height: 200px;
+    display: flex;
+    justify-content: center;
+    background-size: cover;
+    width: 200px;
+    height: 200px;
+    
+
 `;
 export const Img = styled.img`
   width: 100%;
@@ -42,21 +49,27 @@ export const Capital = styled.div`
   justify-content: center;
 `;
 export const CountryName = styled.div`
-  font-size: 20px;
-  display: flex;
-  justify-content: center;
-  font-weight: 700;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    margin-bottom: 20px;
 `;
-export const ImgBlock = styled.div``;
+export const ImgBlock = styled.div`
+`;
 export const LoaderBox = styled.div``;
 /*Countries Details*/
 export const ItemsInner = styled.div`
-  width: 80%;
-  margin: 0 auto;
-  min-height: 400px;
-  color: #0064ad;
+    width: 80%;
+    margin: auto;
+    min-height: 400px;
+    color: #0064ad;
+    cursor: pointer;
+    padding: 20px;
+  
 `;
-export const FlagPart = styled.div``;
+export const FlagPart = styled.div`
+`;
 
 export const CapitalDetail = styled.p`
   font-size: 20px;
@@ -89,4 +102,5 @@ export const Span = styled.span`
 export const ImgBox = styled.div`
   width: 50%;
   margin: 0 auto;
+    
 `;
